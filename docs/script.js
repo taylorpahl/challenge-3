@@ -43,7 +43,9 @@ else {
 }
 
 // 2) Validate the input
-
+if (!useUppercase && !useLowercase && !useNumbers && !useSpecial) {
+  window.alert("Must choose at least one option.");
+}
 // 3) Generate password
 
 // 4) Display password on screen
