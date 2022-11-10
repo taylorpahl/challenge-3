@@ -47,10 +47,20 @@ if (!useUppercase && !useLowercase && !useNumbers && !useSpecial) {
   window.alert("Must choose at least one option.");
   return;
 }
-
 // 3) Gather list of characters
-if (useUppercase) {
-  charSets += uppercase;
+else {
+  if (useUppercase) {
+    charSets += uppercase;
+  }
+  if (useLowercase) {
+    charSets += lowercase;
+  }
+  if (useNumbers) {
+    charSets += numbers;
+  }
+  if (useSpecial) {
+    charSets += special;
+  }
 }
 
 // 4) Generate password
