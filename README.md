@@ -14,7 +14,10 @@ This website features a random password generator that creates a random password
 ## Usage
 
 Press "Generate Password" button in the miiddle of the page, answer the following window prompts, and random passsword will be generated with the chosen characters and displayed in the text area above the button.
+
+
 ![image](/Assets/images/taylorpahl.github.io_challenge-3_ (1).png)
+
 
 ## Link
 
