@@ -76,9 +76,14 @@ for (var i = 0; i < passwordLength; i++) {
   pwArray.push(selectedChar);
   console.log(selectedChar);
 }
-console.log(pwArray);
+
 // 5) Display password on screen
-  return;
+
+var arrayStr = pwArray.toString();
+console.log(arrayStr);
+var result =  arrayStr.split(',').join('');
+
+return result;
 }
 
 // Write password to the #password input
