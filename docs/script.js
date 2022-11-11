@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Character set arrays
+// Character sets
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "1234567890";
@@ -14,7 +14,7 @@ var useUppercase;
 var useLowercase;
 var useNumbers;
 var useSpecial;
-var charSets;
+var charSets = "";
 
 // 1) Prompt user for password criteria
 
@@ -64,7 +64,19 @@ else {
 }
 
 // 4) Generate password
+var numPossChars = charSets.length;
+var pwArray = [];
 
+var selectedChar;
+for (var i = 0; i < passwordLength; i++) {
+  var random = Math.random() * numPossChars;
+  var index = Math.floor(random);
+  selectedChar = charSets[index];
+  
+  pwArray.push(selectedChar);
+  console.log(selectedChar);
+}
+console.log(pwArray);
 // 5) Display password on screen
   return;
 }
